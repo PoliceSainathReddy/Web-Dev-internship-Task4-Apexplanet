@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(145deg, #e0e7ff, #f9fafe);
+  color: #333;
+}
+
+header {
+  background-color: #1e40af;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+select {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card h3 {
+  margin: 0 0 10px;
+}
+
+.price {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.rating {
+  color: #f59e0b;
+}
+
+/* Basic Reset */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+input[type="text"], select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button#themeToggle {
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.dark button#themeToggle {
+  background: #fff;
+  color: #000;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+body.dark .product-card {
+  background: #1f1f1f;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
