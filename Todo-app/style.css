@@ -1,0 +1,129 @@
+:root {
+  --bg-color: #141e30;
+  --text-color: #fff;
+  --highlight: #00ffc3;
+  --card-bg: #1a1a1a;
+}
+
+body.light {
+  --bg-color: #f2f2f2;
+  --text-color: #222;
+  --highlight: #00c8a6;
+  --card-bg: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 30px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: var(--highlight);
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+select, #themeToggle {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#themeToggle {
+  background: var(--highlight);
+  color: var(--bg-color);
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: var(--highlight);
+  color: var(--bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: var(--card-bg);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .top-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+}
